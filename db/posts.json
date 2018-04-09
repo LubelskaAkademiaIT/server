@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "LaIT",
+      "author": "Maciej Sikora"
+    },
+    {
+      "title": "test2",
+      "author": "Uknown",
+      "id": "2"
+    }
+  ],
+  "comments": [
+    {
+      "body": "Comment Edit",
+      "postId": "1",
+      "id": 1
+    },
+    {
+      "id": "2",
+      "body": "Comment",
+      "postId": "1"
+    },
+    {
+      "id": "3",
+      "body": "Comment",
+      "postId": "2"
+    }
+  ]
+}
