@@ -1,7 +1,10 @@
 const express = require('express')
 const router = express.Router();
 const uuidv1 = require('uuid/v1');
-const fileDb = require('../file.db')('todoapp/todo');
+const fileDb = require('../file.db')('chat/chat');
+
+const login = require('./login');
+router.use(login);
 
 // define the home page route
 router.get('/', function (req, res) {
@@ -16,8 +19,7 @@ router.post('/', function (req, res) {
     const id = uuidv1();
     data.push({
       id,
-      task: req.body.task || 'No task info',
-      done: false
+      task: req.body.task || 'No task info'
     });
     return { data, id };
   }).then(({data, id}) => {
@@ -27,11 +29,13 @@ router.post('/', function (req, res) {
 });
 
 router.put('/:id', function (req, res) {
-  fileDb.get().then((data = []) => {
+  fileDb.get().then((data) => {
+    if (!data) {
+      throw new Error('No todo list')
+    }
     const newdata = data.map((task) => {
       if (task.id === req.params.id) {
         return {
-          ...task, 
           id: task.id,
           task: req.body.task
         }
@@ -47,32 +51,8 @@ router.put('/:id', function (req, res) {
   });
 });
 
-
-router.patch('/done/:id', function (req, res) {
-  fileDb.get().then((data = []) => {
-    const newdata = data.map((task) => {
-      if (task.id === req.params.id) {
-        return {...task, done: true}
-      }
-      return task;
-    });
-    return { data: newdata, id: req.params.id };
-  }).then(({data, id}) => {
-    return fileDb.save(data).then(() => res.send({id}));
-  }).catch((e) => {
-    res.status(500).send(e.message);
-  });
-});
-
 router.delete('/:id', function (req, res) {
-  fileDb.get().then((data = []) => {
-    const newdata = data.filter((task) => task.id !== req.params.id);
-    return { data: newdata, id: req.params.id };
-  }).then(({data, id}) => {
-    return fileDb.save(data).then(() => res.send({id}));
-  }).catch((e) => {
-    res.status(500).send(e.message);
-  });
+  res.send('Todo DELETE')
 });
 
 

@@ -1,31 +1,46 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "LaIT",
-      "author": "Maciej Sikora"
+      "id": 2,
+      "title": "www",
+      "author": "sssss"
     },
     {
-      "title": "test2",
-      "author": "Uknown",
-      "id": "2"
+      "id": 3,
+      "title": "ads",
+      "author": "asd"
+    },
+    {
+      "id": 4,
+      "title": "aaa",
+      "author": "aaaaa"
+    },
+    {
+      "id": 5,
+      "title": "asdasd",
+      "author": "asdads"
+    },
+    {
+      "id": 7,
+      "title": "wwww",
+      "author": "www"
     }
   ],
   "comments": [
     {
-      "body": "Comment Edit",
-      "postId": "1",
-      "id": 1
-    },
-    {
       "id": "2",
       "body": "Comment",
-      "postId": "1"
+      "postId": 2
     },
     {
       "id": "3",
       "body": "Comment",
-      "postId": "2"
+      "postId": 2
+    },
+    {
+      "id": "10",
+      "body": "Comment",
+      "postId": "4"
     }
   ]
 }

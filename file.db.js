@@ -2,10 +2,10 @@
 const path = require('path');
 const fs = require('fs');
 
-module.exports = (filename) => {
+module.exports = (filename, defaultValue = []) => {
   const filepath = path.resolve(__dirname, filename + '.json');
   if (!fs.existsSync(filepath)) {
-    fs.writeFileSync(filepath, ''); // create new file
+    fs.writeFileSync(filepath, JSON.stringify(defaultValue)); // create new file
   }
 
   return {
