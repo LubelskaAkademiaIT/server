@@ -64,6 +64,23 @@ router.patch('/done/:id', function (req, res) {
   });
 });
 
+
+router.patch('/undone/:id', function (req, res) {
+  fileDb.get().then((data = []) => {
+    const newdata = data.map((task) => {
+      if (task.id === req.params.id) {
+        return {...task, done: false}
+      }
+      return task;
+    });
+    return { data: newdata, id: req.params.id };
+  }).then(({data, id}) => {
+    return fileDb.save(data).then(() => res.send({id}));
+  }).catch((e) => {
+    res.status(500).send(e.message);
+  });
+});
+
 router.delete('/:id', function (req, res) {
   fileDb.get().then((data = []) => {
     const newdata = data.filter((task) => task.id !== req.params.id);
