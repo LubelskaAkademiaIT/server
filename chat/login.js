@@ -1,27 +1,21 @@
 const express = require('express')
 const router = express.Router();
 const uuidv1 = require('uuid/v1');
+const uuidv4 = require('uuid/v4');
 const fileDb = require('../file.db')('chat/sessions');
 
-router.post('/login', function (req, res) {
+router.post('/', function (req, res) {
   fileDb.get().then((data = []) => {
-    const token = uuidv1();
+    const token = uuidv1()+uuidv4();
     data.push({
       token,
-      alias: req.body.alias || 'Unknown'
+      alias: req.body.alias || 'Unknown',
+      id: uuidv1()
     });
     return { data, token };
   }).then(({data, token}) => {
     return fileDb.save(data).then(() => res.send({token}));
   });
 });
-
-router.delete('/logout/:token', function (req, res) {
-  fileDb.get()
-  .then((data = []) => data.filter(user => user.token !== req.params.token))
-  .then((data) => fileDb.save(data))
-  .then(() => res.send('User session is over'));
-});
-
 
 module.exports = router

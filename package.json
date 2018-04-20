@@ -20,6 +20,7 @@
   "homepage": "https://github.com/LubelskaAkademiaIT/server#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "express-bearer-token": "^2.1.1",
     "json-server": "^0.12.1",
     "nodemon": "^1.17.3",
     "uuid": "^3.2.1"

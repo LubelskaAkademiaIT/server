@@ -4,6 +4,8 @@ const config = require('./config');
 const todo = require('./todoapp/routes');
 const chat = require('./chat/routes');
 const chatLogin = require('./chat/login');
+
+const simplePage = require('./simplepage/routes');
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json()); // for parsing application/json
@@ -25,5 +27,7 @@ app.use('/todo', todo);
 
 app.use('/chat', chat);
 app.use('/chatlogin', chatLogin);
+
+app.use('/simplepage', simplePage);
 
 app.listen(3000, () => console.log('Lait server listening on port 3000!'));
