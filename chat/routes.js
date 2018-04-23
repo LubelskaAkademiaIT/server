@@ -5,6 +5,12 @@ const fileDb = require('../file.db')('chat/chat');
 const fileDbSessions = require('../file.db')('chat/sessions');
 
 router.use((req, res, next) => {
+  if (req.method === 'OPTIONS') {
+    // respond success for preflight request
+    res.send();
+    return;
+  }
+
   if (!req.headers.authorization) {
     return res.status(401).json({ error: 'No authorization' });
   }
