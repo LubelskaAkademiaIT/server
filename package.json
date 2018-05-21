@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon index.js",
     "todoapp": "node index.js",
-    "posts": "json-server --watch db/posts.json"
+    "posts": "json-server --watch db/posts.json",
+    "react-apps": "json-server --watch db/react-apps.json"
   },
   "repository": {
     "type": "git",

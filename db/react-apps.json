@@ -1,0 +1,188 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Matrix",
+      "type": "Sci-FI",
+      "rate": "10",
+      "favorite": true
+    },
+    {
+      "id": 2,
+      "title": "Lord of the Rings",
+      "type": "Fantasy",
+      "rate": "9",
+      "favorite": false
+    },
+    {
+      "id": 3,
+      "title": "Truman Show",
+      "type": "Drama",
+      "rate": "8",
+      "favorite": false
+    },
+    {
+      "id": 4,
+      "title": "Die Hard",
+      "type": "Action",
+      "rate": "10",
+      "favorite": true
+    },
+    {
+      "id": 5,
+      "title": "Alien",
+      "type": "Sci-FI",
+      "rate": "8",
+      "favorite": false
+    },
+    {
+      "id": 6,
+      "title": "Shrek",
+      "type": "Cartoon",
+      "rate": "5",
+      "favorite": false
+    },
+    {
+      "id": 7,
+      "title": "Hangover",
+      "type": "Comedy",
+      "rate": "8",
+      "favorite": false
+    },
+    {
+      "id": 8,
+      "title": "The Terminator",
+      "type": "Action",
+      "rate": "10",
+      "favorite": true
+    },
+    {
+      "id": 9,
+      "title": "Predator",
+      "type": "Action",
+      "rate": "9",
+      "favorite": false
+    },
+    {
+      "id": 10,
+      "title": "Ghost Busters",
+      "type": "Comedy",
+      "rate": "10",
+      "favorite": true
+    }
+  ],
+  "article_headings": [
+    {
+      "id": 1,
+      "title": "PGNiG Superliga: blisko sensacji w Kielcach"
+    },
+    {
+      "id": 2,
+      "title": "Juan Martin del Potro poznał diagnozę"
+    },
+    {
+      "id": 3,
+      "title": "Aż ośmiu siatkarzy odchodzi z Zawiercia"
+    },
+    {
+      "id": 4,
+      "title": "Kadra siatkarzy wciąż szuka swojej drogi"
+    },
+    {
+      "id": 5,
+      "title": "Glik szczęśliwy z wicemistrzostwa Francji"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "PGNiG Superliga: blisko sensacji w Kielcach",
+      "text": "Aż dziesięć bramek zaliczki mieli szczypiorniści PGE VIVE przed rozpoczęciem drugiego półfinałowego starcia i wydawało się, że rewanż będzie miał podobny przebieg do spotkania, które zostało rozegrane w Puławach. Nic jednak bardziej mylnego. Gracze Azotów przyjechali do stolicy województwa świętokrzyskiego niezwykle mocno zmotywowani i sprawili gospodarzom bardzo dużo problemów. Motywacja to było w ogóle słowo klucz podczas tego pojedynku. Goście wyglądali na dużo bardziej zmobilizowanych i przede wszystkim skoncentrowanych od mistrzów Polski. Żółto-biało-niebiescy mówili przed meczem, że będą musieli od samego początku rzucić się do ataku i sukcesywnie budować swoje prowadzenie, ale podobnie jak podczas finału krajowego pucharu, to puławianie szybciej zdołali odskoczyć, a później przez bardzo długi okres utrzymywać swoją przewagę. "
+    },
+    {
+      "id": 2,
+      "title": "Juan Martin del Potro poznał diagnozę",
+      "text": "W czwartek, w meczu III rundy turnieju ATP Masters 1000 w Rzymie, Juan Martin del Potro zmierzył się z Davidem Goffinem. Argentyńczyk nie dokończył tego spotkania. Poddał grę przy stanie 2:6, 5:4, tłumacząc się kontuzją prawej nogi. Poinformował również, że musi poddać się konsultacjom medycznym."
+    },
+    {
+      "id": 3,
+      "title": "Aż ośmiu siatkarzy odchodzi z Zawiercia",
+      "text": "Już wcześniej informowaliśmy o tym, że Grzegorz Pająk nie przedłuży umowy z Aluronem Virtu Wartą, przenosząc się do Turcji. W kuluarach mówi się, iż do Asseco Resovii Rzeszów przejdzie David Smith. Poza dwoma wymienionymi siatkarzami, dziewiątą drużynę PlusLigi opuszczają ponadto: Kamil Długosz, który grał w Zawierciu przez trzy lata, Kacper Popik (dwa sezony w Jurajskich Rycerzach), Maciej Zajder, Mariusz Marcyniak, Matej Patak i Hugo de Leon Guimaraes."
+    },
+    {
+      "id": 4,
+      "title": "Kadra siatkarzy wciąż szuka swojej drogi",
+      "text": "Spotkanie było bardzo nerwowe, widać było, że dla części tych chłopaków występ w Spodku przed tysiącami ludzi był sporym przeżyciem emocjonalnym. Widać było już po początku pierwszego seta, że nerwy trochę nas zjadły i powtórzyło się to na początku seta numer trzy, kiedy zmieniła się meczowa szóstka. Popełnialiśmy błędy, przez które już na starcie każdej partii przegrywaliśmy dwoma-trzema punktami i to nam mocno utrudniało wygrywanie - tłumaczył przyczyny porażki Michał Gogol. Reprezentacja Polski mimo dość chaotycznej i niedokładnej gry potrafiła gonić wynik i urwała Kanadyjczykom seta, ale koniec końców uległa jej w czterech partiach."
+    },
+    {
+      "id": 5,
+      "title": "Glik szczęśliwy z wicemistrzostwa Francji",
+      "text": "AS Monaco udanie zakończyło sezon i dzięki zwycięstwu nad ES Troyes AC (3:0) drużyna utrzymała drugą pozycję w końcowej tabeli francuskiej ekstraklasy. I mimo że zespół nie obronił mistrzostwa, piłkarze są zadowoleni ze swojego rezultatu."
+    }
+  ],
+  "images": [
+    "/images/1.jpg",
+    "/images/2.jpg",
+    "/images/3.jpg",
+    "/images/4.jpg",
+    "/images/5.jpg",
+    "/images/6.jpg",
+    "/images/7.jpg",
+    "/images/8.jpg",
+    "/images/9.jpg",
+    "/images/10.jpg",
+    "/images/11.jpg",
+    "/images/12.jpg",
+    "/images/13.jpg",
+    "/images/14.jpg",
+    "/images/15.jpg",
+    "/images/16.jpg",
+    "/images/17.jpg",
+    "/images/18.jpg",
+    "/images/19.jpg",
+    "/images/20.jpg",
+    "/images/21.jpg",
+    "/images/22.jpg",
+    "/images/23.jpg"
+  ],
+  "users": [
+    {
+      "id": "oiih-1322-asdad-213-thgdsfs",
+      "name": "Tom",
+      "lastname": "Dudikoff",
+      "typeId": 1
+    },
+    {
+      "id": "2oih-1322-asdad-213-thgdsfs",
+      "name": "Jeff",
+      "lastname": "Johnoson",
+      "typeId": 2
+    },
+    {
+      "id": "3oih-1322-asdad-213-thgdsfs",
+      "name": "Robert",
+      "lastname": "De Niro",
+      "typeId": 1
+    },
+    {
+      "id": "4oih-1322-asdad-213-thgdsfs",
+      "name": "Sam",
+      "lastname": "Rambo",
+      "typeId": 3
+    }
+  ],
+  "user_types": [
+    {
+      "id": 1,
+      "name": "Customer"
+    },
+    {
+      "id": 2,
+      "name": "Moderator"
+    },
+    {
+      "id": 3,
+      "name": "Admin"
+    }
+  ]
+}
